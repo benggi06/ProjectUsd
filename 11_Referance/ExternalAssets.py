@@ -1,0 +1,19 @@
+from pxr import Usd, UsdGeom
+
+file_path = "_assets/asset_ref.usda"
+stage: Usd.Stage = Usd.Stage.CreateNew(file_path)
+
+# Define a root Xform named "World"
+world_xform: UsdGeom.Xform = UsdGeom.Xform.Define(stage, "/World")
+
+# Define a child Xform named "Geometry" under the "World" Xform
+geometry_xform: UsdGeom.Xform = UsdGeom.Xform.Define(stage, world_xform.GetPath().AppendPath("Geometry"))
+
+# Define a new Xform named "Box" under the root "Geometry" Xform
+box_xform: UsdGeom.Xform = UsdGeom.Xform.Define(stage, geometry_xform.GetPath().AppendPath("Box"))
+box_prim: Usd.Prim = box_xform.GetPrim()
+
+# Add a reference to a USD file containing a box geometry
+box_prim.GetReferences().AddReference("./cubebox_a02/cubebox_a02.usd")
+
+stage.Save()
