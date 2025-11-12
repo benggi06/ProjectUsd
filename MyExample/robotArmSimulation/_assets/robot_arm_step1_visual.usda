@@ -1,0 +1,59 @@
+#usda 1.0
+
+def Xform "World"
+{
+    def Xform "RobotArm"
+    {
+        def Xform "Base"
+        {
+            def Capsule "Geom"
+            {
+                uniform token axis = "Y"
+                double height = 1
+                double radius = 1.5
+            }
+
+            def Xform "Arm1"
+            {
+                double3 xformOp:translate = (0, 2, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+
+                def Capsule "Geom"
+                {
+                    uniform token axis = "Y"
+                    double height = 5
+                    double radius = 0.5
+                    double3 xformOp:translate = (0, 2.5, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def Xform "Arm2"
+                {
+                    double3 xformOp:translate = (0, 5, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+
+                    def Capsule "Geom"
+                    {
+                        uniform token axis = "Y"
+                        double height = 3
+                        double radius = 0.4
+                        double3 xformOp:translate = (0, 1.5, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+                    }
+
+                    def Xform "Gripper"
+                    {
+                        double3 xformOp:translate = (0, 3, 0)
+                        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+                        def Sphere "Geom"
+                        {
+                            double radius = 0.8
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
