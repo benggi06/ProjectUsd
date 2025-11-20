@@ -1,0 +1,196 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Xform "Jukebox"
+{
+    def Cube "Body_Side"
+    {
+        rel material:binding = </Jukebox/Looks/Body_Side_Mat>
+        texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1)] (
+            interpolation = "faceVarying"
+        )
+        int[] primvars:st:indices = [0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3]
+        float3 xformOp:scale = (10, 9.8, 10)
+        double3 xformOp:translate = (0, -0.20000000298023224, 0)
+        uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:translate"]
+    }
+
+    def Scope "Looks"
+    {
+        def Material "Body_Side_Mat"
+        {
+            token outputs:surface.connect = </Jukebox/Looks/Body_Side_Mat/PBR.outputs:surface>
+
+            def Shader "stReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @./jukebox_side.png@
+                float2 inputs:st.connect = </Jukebox/Looks/Body_Side_Mat/stReader.outputs:result>
+                float3 outputs:rgb
+            }
+
+            def Shader "PBR"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </Jukebox/Looks/Body_Side_Mat/Texture.outputs:rgb>
+                float inputs:metallic = 0
+                float inputs:roughness = 0.8
+                token outputs:surface
+            }
+        }
+
+        def Material "Body_Top_Mat"
+        {
+            token outputs:surface.connect = </Jukebox/Looks/Body_Top_Mat/PBR.outputs:surface>
+
+            def Shader "stReader"
+            {
+                uniform token info:id = "UsdPrimvarReader_float2"
+                token inputs:varname = "st"
+                float2 outputs:result
+            }
+
+            def Shader "Texture"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @./jukebox_top.png@
+                float2 inputs:st.connect = </Jukebox/Looks/Body_Top_Mat/stReader.outputs:result>
+                float3 outputs:rgb
+            }
+
+            def Shader "PBR"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor.connect = </Jukebox/Looks/Body_Top_Mat/Texture.outputs:rgb>
+                float inputs:metallic = 0
+                float inputs:roughness = 0.8
+                token outputs:surface
+            }
+        }
+    }
+
+    def Cube "Body_Top"
+    {
+        rel material:binding = </Jukebox/Looks/Body_Top_Mat>
+        texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1)] (
+            interpolation = "faceVarying"
+        )
+        int[] primvars:st:indices = [0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3]
+        float3 xformOp:scale = (10, 0.2, 10)
+        double3 xformOp:translate = (0, 39, 0)
+        uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:translate"]
+    }
+
+    def Sphere "Microphone"
+    {
+        color3f[] primvars:displayColor = [(0.2, 0.2, 0.2)]
+        double radius = 1.5
+        double3 xformOp:translate = (0, 11.5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Cylinder "Camera_Sensor"
+    {
+        uniform token axis = "Z"
+        double height = 0.5
+        color3f[] primvars:displayColor = [(0.05, 0.05, 0.05)]
+        double radius = 0.6
+        double3 xformOp:translate = (0, 6, 10)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Xform "LCD_Group"
+    {
+        double3 xformOp:translate = (0, 2, 10)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def Cube "Frame"
+        {
+            color3f[] primvars:displayColor = [(0, 0.8, 0.9)]
+            float3 xformOp:scale = (5, 1.5, 0.5)
+            double3 xformOp:translate = (0, 0, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:translate"]
+        }
+    }
+
+    def Xform "Ultrasonic_Sensor"
+    {
+        double3 xformOp:translate = (-5, 6, 10)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def Cube "Board"
+        {
+            color3f[] primvars:displayColor = [(0.1, 0.1, 0.6)]
+            float3 xformOp:scale = (2, 0.8, 0.1)
+            uniform token[] xformOpOrder = ["xformOp:scale"]
+        }
+
+        def Cylinder "Eye_L"
+        {
+            uniform token axis = "Z"
+            double height = 0.6
+            color3f[] primvars:displayColor = [(0.8, 0.8, 0.8)]
+            double radius = 0.7
+            double3 xformOp:translate = (-1, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cylinder "Eye_R"
+        {
+            uniform token axis = "Z"
+            double height = 0.6
+            color3f[] primvars:displayColor = [(0.8, 0.8, 0.8)]
+            double radius = 0.7
+            double3 xformOp:translate = (1, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+    }
+
+    def Sphere "Status_LED"
+    {
+        color3f[] primvars:displayColor = [(1, 0, 0)]
+        double radius = 0.5
+        double3 xformOp:translate = (-7.5, 6, 10.199999809265137)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Cylinder "Speaker"
+    {
+        uniform token axis = "Z"
+        double height = 0.2
+        color3f[] primvars:displayColor = [(0.2, 0.2, 0.2)]
+        double radius = 2.5
+        double3 xformOp:translate = (0, -4.5, 10)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Cylinder "VolumeKnob"
+    {
+        uniform token axis = "Z"
+        double height = 1.5
+        color3f[] primvars:displayColor = [(0.7, 0.5, 0.3)]
+        double radius = 1.2
+        double3 xformOp:translate = (6, -3, 10)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Cylinder "Ctrl_Button"
+    {
+        uniform token axis = "Z"
+        double height = 0.8
+        color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+        double radius = 0.6
+        double3 xformOp:translate = (6, -6, 10)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+}
+

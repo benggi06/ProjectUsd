@@ -1,0 +1,27 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 0.01
+    subLayers = [
+        @./contents/shading.usd@,
+        @./contents/geometry.usd@
+    ]
+    upAxis = "Y"
+)
+
+over "World"
+{
+    over "Geometry"
+    {
+        over "skyscraperF"
+        {
+            uniform token purpose = "render"
+        }
+
+        over "sign_billboard"
+        {
+            uniform token purpose = "render"
+        }
+    }
+}
+

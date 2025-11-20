@@ -1,0 +1,92 @@
+#usda 1.0
+(
+    upAxis = "Y"
+)
+
+def Xform "Jukebox"
+{
+    def Cube "Body"
+    {
+        color3f[] primvars:displayColor = [(0.4, 0.25, 0.15)]
+        float3 xformOp:scale = (10, 10, 10)
+        uniform token[] xformOpOrder = ["xformOp:scale"]
+    }
+
+    def Cylinder "Camera_Sensor"
+    {
+        uniform token axis = "Z"
+        double height = 0.5
+        color3f[] primvars:displayColor = [(0.05, 0.05, 0.05)]
+        double radius = 0.6
+        double3 xformOp:translate = (0, 4, 10)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Cube "LCD_Frame"
+    {
+        color3f[] primvars:displayColor = [(0.1, 0.1, 0.1)]
+        float3 xformOp:scale = (6.5, 2, 0.2)
+        double3 xformOp:translate = (0, 1, 10.100000381469727)
+        uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:translate"]
+    }
+
+    def Cube "LCD_Screen"
+    {
+        color3f[] primvars:displayColor = [(0, 0.8, 1)]
+        float3 xformOp:scale = (6, 1.6, 0.1)
+        double3 xformOp:translate = (0, 1, 10.300000190734863)
+        uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:translate"]
+    }
+
+    def Xform "Ultrasonic_Sensor"
+    {
+        double3 xformOp:translate = (-5, -3, 10)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def Cube "Board"
+        {
+            color3f[] primvars:displayColor = [(0, 0.2, 0.5)]
+            float3 xformOp:scale = (2.5, 1, 0.1)
+            uniform token[] xformOpOrder = ["xformOp:scale"]
+        }
+
+        def Cylinder "Eye_L"
+        {
+            uniform token axis = "Z"
+            double height = 0.8
+            color3f[] primvars:displayColor = [(0.8, 0.8, 0.8)]
+            double radius = 0.8
+            double3 xformOp:translate = (-1.2000000476837158, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cylinder "Eye_R"
+        {
+            uniform token axis = "Z"
+            double height = 0.8
+            color3f[] primvars:displayColor = [(0.8, 0.8, 0.8)]
+            double radius = 0.8
+            double3 xformOp:translate = (1.2000000476837158, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+    }
+
+    def Sphere "Status_LED"
+    {
+        color3f[] primvars:displayColor = [(1, 0, 0)]
+        double radius = 0.4
+        double3 xformOp:translate = (-5, -1, 10.199999809265137)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Cylinder "VolumeKnob"
+    {
+        uniform token axis = "Z"
+        double height = 1.5
+        color3f[] primvars:displayColor = [(0.6, 0.4, 0.2)]
+        double radius = 1.2
+        double3 xformOp:translate = (5, -3, 10)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+}
+

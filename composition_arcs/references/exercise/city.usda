@@ -1,0 +1,29 @@
+#usda 1.0
+(
+    metersPerUnit = 0.01
+    upAxis = "Y"
+)
+
+def Xform "World"
+{
+    def Xform "skyscraperA_01" (
+        prepend references = @../../lib/assets/envir/city/skyscraperA/skyscraperA.usd@
+    )
+    {
+    }
+
+    def Xform "skyscraperA_02" (
+        prepend references = @../../lib/assets/envir/city/skyscraperA/skyscraperA.usd@
+    )
+    {
+        double3 xformOp:translate = (180, 0, 0)
+    }
+
+    def Xform "skyscraperE_01" (
+        prepend references = @../../lib/assets/envir/city/skyscraperE/skyscraperE.usd@
+    )
+    {
+        double3 xformOp:translate = (340, 0, 0)
+    }
+}
+
