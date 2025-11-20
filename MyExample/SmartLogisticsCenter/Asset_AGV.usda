@@ -1,0 +1,44 @@
+#usda 1.0
+(
+    defaultPrim = "AGV"
+    upAxis = "Y"
+)
+
+def Xform "AGV" (
+    prepend payload = @./Heavy_Parts.usda@
+    variants = {
+        string State = "Idle"
+    }
+    prepend variantSets = "State"
+)
+{
+    def Cube "Body"
+    {
+        float3 xformOp:scale = (0.5, 0.3, 0.8)
+        uniform token[] xformOpOrder = ["xformOp:scale"]
+    }
+    variantSet "State" = {
+        "Error" {
+            over "Body"
+            {
+                color3f[] primvars:displayColor = [(0.9, 0.1, 0.1)]
+            }
+
+        }
+        "Idle" {
+            over "Body"
+            {
+                color3f[] primvars:displayColor = [(0.2, 0.2, 0.8)]
+            }
+
+        }
+        "Working" {
+            over "Body"
+            {
+                color3f[] primvars:displayColor = [(0.2, 0.8, 0.2)]
+            }
+
+        }
+    }
+}
+

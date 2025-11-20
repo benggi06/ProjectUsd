@@ -1,0 +1,141 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    endTimeCode = 60
+    framesPerSecond = 24
+    startTimeCode = 0
+    upAxis = "Y"
+)
+
+def "World"
+{
+    def Xform "Equipment"
+    {
+        def Xform "AGV_0" (
+            prepend references = @./Asset_AGV.usda@
+            variants = {
+                string State = "Idle"
+            }
+        )
+        {
+            double3 xformOp:translate = (-2, 0, 5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Xform "AGV_1" (
+            prepend references = @./Asset_AGV.usda@
+            variants = {
+                string State = "Working"
+            }
+        )
+        {
+            double3 xformOp:translate = (0, 0, 5)
+            double3 xformOp:translate.timeSamples = {
+                0: (0, 0, 5),
+                50: (0, 0, 15),
+                100: (0, 0, 5),
+            }
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Xform "AGV_2" (
+            prepend references = @./Asset_AGV.usda@
+            variants = {
+                string State = "Error"
+            }
+        )
+        {
+            double3 xformOp:translate = (2, 0, 5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def Cube "Floor_Collider" (
+            prepend apiSchemas = ["PhysicsCollisionAPI"]
+        )
+        {
+            float3 xformOp:scale = (20, 0.1, 20)
+            double3 xformOp:translate = (0, -0.1, 0)
+            uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:translate"]
+        }
+
+        def Cube "DropBox" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI", "PhysicsMassAPI"]
+        )
+        {
+            float physics:mass = 10
+            color3f[] primvars:displayColor = [(1, 0.5, 0)]
+            float3 xformOp:scale = (0.5, 0.5, 0.5)
+            double3 xformOp:translate.timeSamples = {
+                0: (1.25, 5, 0),
+                1: (1.25, 4.98296875, 0),
+                2: (1.25, 4.94890625, 0),
+                3: (1.25, 4.897812500000001, 0),
+                4: (1.25, 4.8296875, 0),
+                5: (1.25, 4.7445312500000005, 0),
+                6: (1.25, 4.64234375, 0),
+                7: (1.25, 4.523125, 0),
+                8: (1.25, 4.386875, 0),
+                9: (1.25, 4.23359375, 0),
+                10: (1.25, 4.06328125, 0),
+                11: (1.25, 3.8759375, 0),
+                12: (1.25, 3.6715625, 0),
+                13: (1.25, 3.4501562499999996, 0),
+                14: (1.25, 3.2117187499999993, 0),
+                15: (1.25, 2.9562499999999994, 0),
+                16: (1.25, 2.6837499999999994, 0),
+                17: (1.25, 2.3942187499999994, 0),
+                18: (1.25, 2.0876562499999993, 0),
+                19: (1.25, 1.7640624999999992, 0),
+                20: (1.25, 1.423437499999999, 0),
+                21: (1.25, 1.0657812499999988, 0),
+                22: (1.25, 0.6910937499999987, 0),
+                23: (1.25, 0.2993749999999986, 0),
+                24: (1.25, 0.25, 0),
+                25: (1.25, 0.43734375000000003, 0),
+                26: (1.25, 0.60765625, 0),
+                27: (1.25, 0.7609375, 0),
+                28: (1.25, 0.8971875, 0),
+                29: (1.25, 1.01640625, 0),
+                30: (1.25, 1.11859375, 0),
+                31: (1.25, 1.20375, 0),
+                32: (1.25, 1.271875, 0),
+                33: (1.25, 1.32296875, 0),
+                34: (1.25, 1.3570312500000001, 0),
+                35: (1.25, 1.3740625000000002, 0),
+                36: (1.25, 1.3740625000000002, 0),
+                37: (1.25, 1.3570312500000001, 0),
+                38: (1.25, 1.3229687500000002, 0),
+                39: (1.25, 1.2718750000000003, 0),
+                40: (1.25, 1.2037500000000003, 0),
+                41: (1.25, 1.1185937500000003, 0),
+                42: (1.25, 1.0164062500000004, 0),
+                43: (1.25, 0.8971875000000005, 0),
+                44: (1.25, 0.7609375000000005, 0),
+                45: (1.25, 0.6076562500000006, 0),
+                46: (1.25, 0.4373437500000006, 0),
+                47: (1.25, 0.2500000000000006, 0),
+                48: (1.25, 0.25, 0),
+                49: (1.25, 0.33515625, 0),
+                50: (1.25, 0.40328125, 0),
+                51: (1.25, 0.454375, 0),
+                52: (1.25, 0.48843749999999997, 0),
+                53: (1.25, 0.50546875, 0),
+                54: (1.25, 0.50546875, 0),
+                55: (1.25, 0.4884375, 0),
+                56: (1.25, 0.45437500000000003, 0),
+                57: (1.25, 0.40328125000000004, 0),
+                58: (1.25, 0.33515625000000004, 0),
+                59: (1.25, 0.25000000000000006, 0),
+                60: (1.25, 0.25, 0),
+            }
+            uniform token[] xformOpOrder = ["xformOp:scale", "xformOp:translate"]
+        }
+    }
+
+    def PhysicsScene "PhysicsScene"
+    {
+        vector3f physics:gravityDirection = (0, -1, 0)
+        float physics:gravityMagnitude = 9.81
+    }
+}
+

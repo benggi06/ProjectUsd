@@ -1,0 +1,709 @@
+#usda 1.0
+(
+    defaultPrim = "InternalParts"
+    upAxis = "Y"
+)
+
+def Xform "InternalParts"
+{
+    def Sphere "Bolt_0_0"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0, 0.5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_0_1"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0, 0.5, 0.05)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_0_2"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0, 0.5, 0.1)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_0_3"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0, 0.5, 0.15000000000000002)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_0_4"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0, 0.5, 0.2)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_0_5"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0, 0.5, 0.25)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_0_6"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0, 0.5, 0.30000000000000004)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_0_7"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0, 0.5, 0.35000000000000003)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_0_8"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0, 0.5, 0.4)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_0_9"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0, 0.5, 0.45)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_1_0"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.05, 0.5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_1_1"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.05, 0.5, 0.05)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_1_2"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.05, 0.5, 0.1)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_1_3"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.05, 0.5, 0.15000000000000002)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_1_4"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.05, 0.5, 0.2)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_1_5"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.05, 0.5, 0.25)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_1_6"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.05, 0.5, 0.30000000000000004)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_1_7"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.05, 0.5, 0.35000000000000003)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_1_8"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.05, 0.5, 0.4)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_1_9"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.05, 0.5, 0.45)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_2_0"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.1, 0.5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_2_1"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.1, 0.5, 0.05)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_2_2"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.1, 0.5, 0.1)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_2_3"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.1, 0.5, 0.15000000000000002)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_2_4"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.1, 0.5, 0.2)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_2_5"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.1, 0.5, 0.25)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_2_6"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.1, 0.5, 0.30000000000000004)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_2_7"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.1, 0.5, 0.35000000000000003)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_2_8"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.1, 0.5, 0.4)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_2_9"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.1, 0.5, 0.45)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_3_0"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.15000000000000002, 0.5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_3_1"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.15000000000000002, 0.5, 0.05)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_3_2"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.15000000000000002, 0.5, 0.1)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_3_3"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.15000000000000002, 0.5, 0.15000000000000002)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_3_4"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.15000000000000002, 0.5, 0.2)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_3_5"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.15000000000000002, 0.5, 0.25)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_3_6"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.15000000000000002, 0.5, 0.30000000000000004)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_3_7"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.15000000000000002, 0.5, 0.35000000000000003)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_3_8"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.15000000000000002, 0.5, 0.4)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_3_9"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.15000000000000002, 0.5, 0.45)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_4_0"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.2, 0.5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_4_1"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.2, 0.5, 0.05)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_4_2"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.2, 0.5, 0.1)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_4_3"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.2, 0.5, 0.15000000000000002)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_4_4"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.2, 0.5, 0.2)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_4_5"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.2, 0.5, 0.25)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_4_6"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.2, 0.5, 0.30000000000000004)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_4_7"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.2, 0.5, 0.35000000000000003)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_4_8"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.2, 0.5, 0.4)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_4_9"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.2, 0.5, 0.45)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_5_0"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.25, 0.5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_5_1"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.25, 0.5, 0.05)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_5_2"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.25, 0.5, 0.1)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_5_3"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.25, 0.5, 0.15000000000000002)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_5_4"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.25, 0.5, 0.2)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_5_5"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.25, 0.5, 0.25)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_5_6"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.25, 0.5, 0.30000000000000004)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_5_7"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.25, 0.5, 0.35000000000000003)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_5_8"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.25, 0.5, 0.4)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_5_9"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.25, 0.5, 0.45)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_6_0"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.30000000000000004, 0.5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_6_1"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.30000000000000004, 0.5, 0.05)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_6_2"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.30000000000000004, 0.5, 0.1)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_6_3"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.30000000000000004, 0.5, 0.15000000000000002)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_6_4"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.30000000000000004, 0.5, 0.2)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_6_5"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.30000000000000004, 0.5, 0.25)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_6_6"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.30000000000000004, 0.5, 0.30000000000000004)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_6_7"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.30000000000000004, 0.5, 0.35000000000000003)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_6_8"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.30000000000000004, 0.5, 0.4)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_6_9"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.30000000000000004, 0.5, 0.45)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_7_0"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.35000000000000003, 0.5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_7_1"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.35000000000000003, 0.5, 0.05)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_7_2"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.35000000000000003, 0.5, 0.1)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_7_3"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.35000000000000003, 0.5, 0.15000000000000002)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_7_4"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.35000000000000003, 0.5, 0.2)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_7_5"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.35000000000000003, 0.5, 0.25)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_7_6"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.35000000000000003, 0.5, 0.30000000000000004)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_7_7"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.35000000000000003, 0.5, 0.35000000000000003)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_7_8"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.35000000000000003, 0.5, 0.4)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_7_9"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.35000000000000003, 0.5, 0.45)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_8_0"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.4, 0.5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_8_1"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.4, 0.5, 0.05)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_8_2"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.4, 0.5, 0.1)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_8_3"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.4, 0.5, 0.15000000000000002)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_8_4"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.4, 0.5, 0.2)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_8_5"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.4, 0.5, 0.25)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_8_6"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.4, 0.5, 0.30000000000000004)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_8_7"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.4, 0.5, 0.35000000000000003)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_8_8"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.4, 0.5, 0.4)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_8_9"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.4, 0.5, 0.45)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_9_0"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.45, 0.5, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_9_1"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.45, 0.5, 0.05)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_9_2"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.45, 0.5, 0.1)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_9_3"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.45, 0.5, 0.15000000000000002)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_9_4"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.45, 0.5, 0.2)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_9_5"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.45, 0.5, 0.25)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_9_6"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.45, 0.5, 0.30000000000000004)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_9_7"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.45, 0.5, 0.35000000000000003)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_9_8"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.45, 0.5, 0.4)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "Bolt_9_9"
+    {
+        double radius = 0.02
+        double3 xformOp:translate = (0.45, 0.5, 0.45)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+}
+
